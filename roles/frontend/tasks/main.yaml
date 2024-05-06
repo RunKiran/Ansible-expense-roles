@@ -10,9 +10,8 @@
     state: started 
 
 
-
-- name: run app-pre-req
-  ansible.bulitin.import_role:
+- name: run app pre-requisites
+  ansible.builtin.import_role:
     name: common
     tasks_from: app-pre-req
 
