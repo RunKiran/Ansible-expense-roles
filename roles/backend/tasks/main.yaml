@@ -34,7 +34,7 @@
   - name: run app-pre-req
     ansible.buitin.import_role:
       name: common
-      task_from: app-pre-req.yaml
+      task_from: app-pre-req
 
 - name: installing dependencies with npm
   ansible.builtin.command: npm install
