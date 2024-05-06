@@ -24,10 +24,11 @@
 #     src: https://expense-builds.s3.us-east-1.amazonaws.com/expense-frontend-v2.zip
 #     dest: /usr/share/nginx/html/           
 #     remote_src: yes
+
   - name: run app-pre-req
     ansible.buitin.import_role:
       name: common
-      task_from: app-pre-req.yaml
+      tasks_from: app-pre-req
 
   
 - name: copy expense conf  
